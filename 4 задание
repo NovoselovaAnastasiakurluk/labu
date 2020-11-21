@@ -1,1 +1,23 @@
-
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	int a,b;
+	float p=3.14;
+	int d;
+	cin>>a>>b;
+	cout<<"Периметр фигуры: "<<(a+b)*2<<endl;
+	cout<<"Площадь фигуры: "<<a*b<<endl;
+	cout<<"Длина круга: "<<p*d<<endl;
+	cout<<"Среднее арифметическое: "<<(a+b)/2<<endl;
+	cout<<"Сумма квадратов: "<<(a*a)+(b*b)<<endl;
+	cout<<"Разность квадратов: "<<(a*a)-(b*b)<<endl;
+	cout<<"Произведение квадратов: "<<(a*a)*(b*b)<<endl;
+	cout<<"Частное квадратов: "<<(a*a)/(b*b)<<endl;
+	cout<<"Сумма модулей: "<<abs(a)+abs(b)<<endl;
+	cout<<"Разность модулей: "<<abs(a)-abs(b)<<endl;
+	cout<<"Произведение модулей: "<<abs(a)*abs(b)<<endl;
+	cout<<"Частное модулей: "<<abs(a)/abs(b)<<endl;
+	return 0;
+}
