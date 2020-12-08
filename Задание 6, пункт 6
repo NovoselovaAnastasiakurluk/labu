@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int A, A2, A4, A8;
+	cin>>A;
+	A2=A*A;
+	A4=A2*A2;
+	A8=A4*A4;
+	cout<<"A2="<<A2<<endl;
+	cout<<"A4="<<A4<<endl;
+	cout<<"A8="<<A8<<endl;
+	return 0;
+}
