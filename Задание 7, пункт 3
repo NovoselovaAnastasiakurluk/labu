@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int kg=1, X, A, Y, B, C;
+	cout<<"X= ";
+	cin>>X;
+	cout<<"A=";
+	cin>>A;
+	cout<<"kg= "<<kg<<endl;
+	cout<<"Y= ";
+	cin>>Y;
+	cout<<kg<<"kg= "<<(kg*A)/X<<"rub"<<endl;
+	cout<<"Y= "<<(Y*A)/X<<"rub"<<endl;
+	return 0;
+}
