@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int A, B, x;
+	cout<<"A= ";
+	cin>>A;
+	cout<<"B=";
+	cin>>B;
+	if(A<0, A>0){		
+		cout<<"x= "<<(-B)/A<<endl;
+	}
+	else{
+		cout<<"Net reshenia"<<endl;
+	}
+	return 0;
+}
