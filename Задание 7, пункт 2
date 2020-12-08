@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int a, Rad;
+	float pi=3.14;
+	cin>>a;
+	if(0<=a, a<(2*pi)){
+		cout<<"Rad= "<<(a*180)/pi<<endl;
+	}
+	else{
+		cout<<"Reshenia net"<<endl;
+	}
+	return 0;
+}
