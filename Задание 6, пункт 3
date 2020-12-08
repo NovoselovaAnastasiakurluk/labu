@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int A, B, C;
+    cout<<"A= ";
+    cin>>A;
+    cout<<"B= ";
+    cin>>B;
+    cout<<"C= ";
+    cin>>C;
+    cout<<"A= "<<B<<endl;
+    cout<<"B= "<<C<<endl;
+    cout<<"C= "<<A<<endl;
+    return 0;
+}
