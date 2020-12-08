@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    float x1,x2,x3,y1,y2,y3;
+    float S,P;
+    float a, b, c, p;
+    float A, B, C;
+	cin>>A>>B>>C;
+    cin>>x1>>y1>>x2>>y2>>x3>>y3;
+    cout<<"Passtouanie: "<<sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1))<<endl;
+    cout<<"AC= "<<abs(C-A)<<endl;
+	cout<<"BC= "<<abs(C-B)<<endl;
+	cout<<"AC+BC= "<<abs(C-A)+abs(C-B)<<endl;
+	cout<<"AC*BC= "<<(abs(C-A))*(abs(C-B))<<endl;
+	cout<<"a= "<<abs(x2-x1)<<endl;
+	cout<<"b= "<<abs(y2-y1)<<endl;
+	cout<<"P= "<<2*((abs(x2-x1))+(abs(y2-y1)))<<endl;
+	cout<<"S= "<<(abs(x2-x1))*(abs(y2-y1))<<endl;
+    a=sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
+    b=sqrt(((x2-x3)*(x2-x3))+((y2-y3)*(y2-y3)));
+    c=sqrt(((x3-x1)*(x3-x1))+((y3-y1)*(y3-y1)));
+    P=a+b+c;
+    p=P/2;
+    S=sqrt(p*(p-a)*(p-b)*(p-c));
+    cout<<"Perimetr= "<<P<<endl<<"Ploshad'= "<<S;
+    return 0;
+}
