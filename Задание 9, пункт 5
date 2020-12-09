@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int year, century, y;
+	cout<<"year= ";
+	cin>>year;
+	y=year%100;
+	if(y>0){
+		century=year/100+1;
+	}
+	else{
+		century=year/100;
+	}
+	cout<<"God otnositsa k= "<<century<<"stoletiy"<<endl;
+	return 0;
+}
