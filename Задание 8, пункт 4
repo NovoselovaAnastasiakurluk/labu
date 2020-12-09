@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int A, B;
+	cout<<"Dvuznachnoye chislo= ";
+	cin>>A;
+	if(A>9){
+		cout<<"Chislo pri perestanovke tsifr= "<<(A/10)+(A%10*10)<<endl;
+	}
+	else{
+		cout<<"Net resheniya"<<endl;
+	}
+	return 0;
+}
