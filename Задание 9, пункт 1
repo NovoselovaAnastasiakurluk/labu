@@ -1,0 +1,10 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int N, sec;
+	cout<<"N= ";
+	cin>>N;
+	cout<<"sec= "<<(N%60);
+	return 0;
+}
