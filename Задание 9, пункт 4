@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int A, B, C, D, E, F;
+	cout<<"A= ";
+	cin>>A;
+	cout<<"B= ";
+	cin>>B;
+	cout<<"C= ";
+	cin>>C;
+	D=A*B;
+	cout<<"Razmer kvadrata= "<<D<<endl;
+	E=C*C;
+    cout<<"S zanyutou chasti="<<E<<endl;
+    F=D/E;
+    cout<<"S nezanyutou chasti= "<<D-F*E<<endl;
+	return 0;
+}
