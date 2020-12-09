@@ -1,0 +1,10 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	float byte;
+	cout<<"byte= ";
+	cin>>byte;
+	cout<<"kilobyte= "<<byte/1024;
+	return 0;
+}
