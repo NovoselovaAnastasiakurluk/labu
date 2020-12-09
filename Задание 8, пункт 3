@@ -1,0 +1,20 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int x, A, B, C, D;
+	cout<<"A= ";
+	cin>>A;
+	cout<<"B= ";
+	cin>>B;
+	if(A>B){
+		x=A/B;
+		C=x*B;
+		D=A-C;
+	}
+	else{
+		cout<<"Net reshenia"<<endl;
+	}
+	cout<<"Dlina nezanyatoy chasti= "<<D<<endl;
+	return 0;
+}
