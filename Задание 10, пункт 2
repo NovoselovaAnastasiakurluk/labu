@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int A, B, C;
+	cout<<"A= ";
+	cin>>A;
+	cout<<"B= ";
+	cin>>B;
+	cout<<"C= ";
+	cin>>C;
+	if(A<B<C){
+		cout<<"Istinno";
+	}
+	else{
+		cout<<"Lozg";
+	}
+	return 0;
+}
