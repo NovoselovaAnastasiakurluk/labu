@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int A, B, C;
+	cout<<"A= ";
+	cin>>A;
+	if(A>9, A<100, A%2==0){
+		cout<<"Istinno";
+	}
+	else{
+		cout<<"Lozg";
+	}
+	return 0;
+}
