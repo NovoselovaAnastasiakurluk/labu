@@ -1,0 +1,20 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int N, y, x, z, v;
+	cout<<"N= ";
+	cin>>N;
+	N=abs(N);
+	x=N%10;
+	y=N/1000;
+	z=N%100/10;
+	v=N%1000/100;
+	if((x==y)& (z==v)){
+		cout<<"Istinno";
+	}
+	else{
+		cout<<"Losno";
+	}
+	return 0;
+}
