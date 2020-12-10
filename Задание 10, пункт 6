@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int a, b, c, x, y, z;
+	cout<<"a= ";
+	cin>>a;
+	cout<<"b= ";
+	cin>>b;
+	cout<<"c= ";
+	cin>>c;
+	cout<<"a^2= "<<a*a<<endl;
+	cout<<"b^2= "<<b*b<<endl;
+	cout<<"c^2= "<<c*c<<endl;
+	x=a*a;
+	y=b*b;
+	z=c*c;
+	if(x==y+z){
+		cout<<"Treygolnic pryamoygolniu"<<endl;
+	}
+	else{
+		cout<<"Treygolnic ne pryamoygolniu"<<endl;
+	}
+	return 0;
+}
