@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int x, y;
+	cout<<"x= ";
+	cin>>x;
+	cout<<"y= ";
+	cin>>y;
+	if((x>0)&(y>0)){
+		cout<<"Tochka v pervoy koordinatnoy chetverti"<<endl;
+	}
+	if((x<0)&(y>0)){
+		cout<<"Tochka v vtoroy koordinatnoy chetverti"<<endl;
+	}
+	if((x<0)&(y<0)){
+		cout<<"Tochka v tretyey koordinatnoy chetverti"<<endl;
+	}
+	if((x>0)&(y<0)){
+		cout<<"Tochka v chetvertoy koordinatnoy chetverti"<<endl;
+	}
+	return 0;
+}
