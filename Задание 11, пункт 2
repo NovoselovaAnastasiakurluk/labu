@@ -1,0 +1,31 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int x, y, z;
+	cout<<"x= ";
+	cin>>x;
+	cout<<"y= ";
+	cin>>y;
+	cout<<"z= ";
+	cin>>z;
+	if((x>y)&(x>z)&(y>z)){
+		cout<<"Summa bolshih chisel= "<<x+y<<endl;
+	}
+	if((x>y)&(x>z)&(z>y)){
+		cout<<"Summa bolshih chisel= "<<x+z<<endl;
+	}
+	if((y>x)&(y>z)&(x>y)){
+		cout<<"Summa bolshih chisel= "<<y+x<<endl;
+	}
+	if((y>x)&(y>z)&(z>y)){
+		cout<<"Summa bolshih chisel= "<<y+z<<endl;
+	}
+	if((z>x)&(z>y)&(x>y)){
+		cout<<"Summa bolshih chisel= "<<z+x<<endl;
+	}
+	if((z>x)&(z>y)&(y>x)){
+		cout<<"Summa bolshih chisel= "<<z+y<<endl;
+	}
+	return 0;
+}
