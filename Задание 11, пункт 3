@@ -1,0 +1,24 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int A, B, C, AB, AC;
+	cout<<"A= ";
+	cin>>A;
+	cout<<"B= ";
+	cin>>B;
+	cout<<"C= ";
+	cin>>C;
+	AB=abs(A-B);
+	AC=abs(A-C);
+	if(AB<AC){
+		cout<<"Tochka B blizhe k A. Rasstoyaniye ="<<AB<<endl;
+	}
+	if(AC<AB){
+		cout<<"Tochka C blizhe k A. Rasstoyaniye ="<<AC<<endl;
+	}
+	if(AB==AC){
+		cout<<"Tochki B i C ravnoudaleny ot tochki A"<<endl;
+	}
+	return 0;
+}
