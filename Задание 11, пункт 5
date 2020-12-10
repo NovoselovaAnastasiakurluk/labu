@@ -1,0 +1,24 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int n;
+	cout<<"n= ";
+	cin>>n;
+	if(n==0){
+		cout<<"nulevoye chislo"<<endl;
+	}
+	if((n>0)&(n%2==0)){
+		cout<<"polozhitel'noye chetnoye chislo"<<endl;
+	}
+	if((n>0)&(n%2!=0)){
+		cout<<"polozhitel'noye ne chetnoye chislo"<<endl;
+	}
+	if((n<0)&(n%2==0)){
+		cout<<"otritsatel'noye chetnoye chislo"<<endl;
+	}
+	if((n<0)&(n%2!=0)){
+		cout<<"otritsatel'noye ne chetnoye chislo"<<endl;
+	}
+	return 0;
+}
