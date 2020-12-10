@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int N, y, x, z;
+	cout<<"N= ";
+	cin>>N;
+	N=abs(N);
+	x=N/100;
+	y=N%100/10;
+	z=N%10;
+	if((x>y)& (y>z)){
+		cout<<"Tsifri rasspologeny v poryadke ybuvania";
+	}
+	if((x<y)&(y<z)){
+		cout<<"Tsifri rasspologeny v poryadke vozrastania";
+	}
+	return 0;
+}
