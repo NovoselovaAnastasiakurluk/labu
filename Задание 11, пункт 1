@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int A, B;
+	cout<<"A= ";
+	cin>>A;
+	cout<<"B= ";
+	cin>>B;
+	if(A==B){
+		cout<<"A=0"<<endl;
+		cout<<"B=0"<<endl;
+	}
+	else if(A>B){
+		cout<<"A="<<B<<endl;
+		cout<<"B="<<A<<endl;
+	}
+	else{
+		cout<<"A="<<B<<endl;
+		cout<<"B="<<A<<endl;
+	}
+	return 0;
+}
