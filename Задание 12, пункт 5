@@ -1,0 +1,91 @@
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+main()
+{
+	setlocale(LC_ALL, "Rus");
+	int N, S, D, E;
+	printf("chislo = ");
+	scanf("%i", &N);
+	S=N%10;
+	D=N%12;
+	E=(N+8)%12;
+	switch (S){
+        case(0):
+        case(1):
+	        printf("Bel");
+	        break;
+        case(2):
+        case(3):
+		    printf("Chern");
+		    break;
+	    case(4):
+	    case(5):
+	        printf("Zelen");
+		    break;
+	    case(6):
+	    case(7):
+            printf("Krasn");
+            break;
+	    case(8):
+	    case(9):
+		    printf("Zelt");
+	        break;
+    }
+	switch (D){
+		case(0):
+		case(1):
+		case(2):
+		case(3):
+		case(4):
+		case(5):
+		case(9):
+		case(10):
+		case(11):
+	        printf("oy ");
+	        break;
+        case(6):
+		case(7): 
+	    case(8):
+	        printf("ogo ");
+	        break;
+    }
+    switch (E){
+		case(0):
+	        printf("krysy ");
+	        break;
+        case(1):
+	        printf("korovy ");
+	        break;
+        case(2):
+		    printf("tigra ");
+		    break;
+	    case(3):
+	        printf("zaytsa ");
+		    break;
+	    case(4):
+            printf("drakona ");
+            break;
+	    case(5):
+		    printf("zmei' ");
+	        break;
+	    case(6):
+		    printf("loshadi ");
+		    break;
+	    case(7):
+		    printf("ovtsy ");
+	        break;
+	    case(8):
+		    printf("obez'yany' ");
+		    break;
+	    case(9):
+		    printf("kuritsy ");
+		    break;
+		case(10):
+		    printf("sobaki ");
+	        break;
+	    case(11):
+		    printf("svin'i ");
+		    break;
+    }
+}
