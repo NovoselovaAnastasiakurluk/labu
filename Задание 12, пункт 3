@@ -1,0 +1,118 @@
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+main()
+{
+	setlocale(LC_ALL, "Rus");
+	int x, y=1, k, c;
+	printf("chislo = ");
+	scanf("%i", &x);
+	k = 0;
+	while ((x > 9) && (x < 41))
+	{
+		switch (x)
+		{
+		case(10):
+			printf("Desyat ");
+			break;
+		case(11):
+			printf("Odinnadtsat ");
+			break;
+		case(12):
+			printf("Dvenadtsat ");
+			break;
+		case(13):
+			printf("Trinadtsat ");
+			break;
+		case(14):
+			printf("Chetyrnadtsat ");
+			break;
+		case(15):
+			printf("Pyatnadtsat ");
+			break;
+		case(16):
+			printf("Shestnadtsat ");
+			break;
+		case(17):
+			printf("Semnadtsat ");
+			break;
+		case(18):
+			printf("Vosemnadtsat ");
+			break;
+		case(19):
+			printf("Devyatnadtsat ");
+			break;
+		case(20):
+			printf("Dvadtsat ");
+			break;
+		case(21):
+			printf("Dvadtsat' odin ");
+			break;
+		case(22):
+			printf("Dvadtsat' dva ");
+			break;
+		case(23):
+			printf("Dvadtsat' tri ");
+			break;
+		case(24):
+			printf("Dvadtsat' cheture ");
+			break;
+		case(25):
+			printf("Dvadtsat' pyat ");
+			break;
+		case(26):
+			printf("Dvadtsat' shest ");
+			break;
+		case(27):
+			printf("Dvadtsat' sem ");
+			break;
+		case(28):
+			printf("Dvadtsat' vos'm ");
+			break;
+		case(29):
+			printf("Dvadtsat' devyat ");
+			break;
+		case(30):
+			printf("Tridtsat ");
+			break;
+		case(31):
+			printf("Tridtsat' odin ");
+			break;
+		case(32):
+			printf("Tridtsat' vtoroye ");
+			break;
+		case(33):
+			printf("Tridtsat' tret'ye ");
+			break;
+		case(34):
+			printf("Tridtsat' cheture ");
+			break;
+		case(35):
+			printf("Tridtsat' pyat ");
+			break;
+		case(36):
+			printf("Tridtsat' shest ");
+			break;
+		case(37):
+			printf("Tridtsat' sem ");
+			break;
+		case(38):
+			printf("Tridtsat' vos'm ");
+			break;
+		case(39):
+			printf("Tridtsat' devyat ");
+			break;
+		case(40):
+			printf("Sorak ");
+			break;
+		}
+		k = 1;
+		break;
+	}
+	switch (y)
+	{
+	case(1):
+		printf("uchebnykh zadaniy");
+		break;
+	}
+}
