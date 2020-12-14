@@ -1,0 +1,153 @@
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+main()
+{
+	setlocale(LC_ALL, "Rus");
+	int x, y, k, c;
+	printf("den = ");
+	scanf("%i", &x);
+	printf("mesyats = ");
+	scanf("%i", &y);
+	k = 0;
+	while ((x > 0) && (x < 32))
+	{
+		switch (x)
+		{
+		case(1):
+			printf("Pervoye ");
+			break;
+		case(2):
+			printf("Vtoroye");
+			break;
+		case(3):
+			printf("Tret'ye ");
+			break;
+		case(4):
+			printf("Chetvertoye ");
+			break;
+		case(5):
+			printf("Pyatoye ");
+			break;
+		case(6):
+			printf("Shestoye ");
+			break;
+		case(7):
+			printf("Sed'moye ");
+			break;
+		case(8):
+			printf("Vos'moye ");
+			break;
+		case(9):
+			printf("Devyatoye ");
+			break;
+		case(10):
+			printf("Desyatoye ");
+			break;
+		case(11):
+			printf("Odinnadtsatoye ");
+			break;
+		case(12):
+			printf("Dvenadtsatoye ");
+			break;
+		case(13):
+			printf("Trinadtsatoye ");
+			break;
+		case(14):
+			printf("Chetyrnadtsatoye ");
+			break;
+		case(15):
+			printf("Pyatnadtsatoye ");
+			break;
+		case(16):
+			printf("Shestnadtsatoye ");
+			break;
+		case(17):
+			printf("Semnadtsatoye ");
+			break;
+		case(18):
+			printf("Vosemnadtsatoye ");
+			break;
+		case(19):
+			printf("Devyatnadtsatoye ");
+			break;
+		case(20):
+			printf("Dvadtsatoye ");
+			break;
+		case(21):
+			printf("Dvadtsat' pervoye ");
+			break;
+		case(22):
+			printf("Dvadtsat' vtoroye ");
+			break;
+		case(23):
+			printf("Dvadtsat' tret'ye ");
+			break;
+		case(24):
+			printf("Dvadtsat' chetvertoye ");
+			break;
+		case(25):
+			printf("Dvadtsat' pyatoye ");
+			break;
+		case(26):
+			printf("Dvadtsat' shestoye ");
+			break;
+		case(27):
+			printf("Dvadtsat' sed'moye ");
+			break;
+		case(28):
+			printf("Dvadtsat' vos'moye ");
+			break;
+		case(29):
+			printf("Dvadtsat' devyatoye ");
+			break;
+		case(30):
+			printf("Tridtsatoye ");
+			break;
+		case(31):
+			printf("Tridtsat' pervoye ");
+			break;
+		}
+		k = 1;
+		break;
+	}
+	switch (y)
+	{
+	case(1):
+		printf("Yanvarya");
+		break;
+	case(2):
+		printf("Fevralya");
+		break;
+	case(3):
+		printf("Marta");
+		break;
+	case(4):
+		printf("Aprelya");
+		break;
+	case(5):
+		printf("Maya");
+		break;
+	case(6):
+		printf("Iyunya");
+		break;
+	case(7):
+		printf("Iyulya");
+		break;
+	case(8):
+		printf("Avgusta");
+		break;
+	case(9):
+		printf("Sentyabrya");
+		break;
+	case(10):
+		printf("Oktyabrya");
+		break;
+	case(11):
+		printf("Noyabrya");
+		break;
+	case(12):
+		printf("Dekabrya");
+		break;
+	}
+}
