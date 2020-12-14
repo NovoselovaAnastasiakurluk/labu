@@ -1,0 +1,53 @@
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+main()
+{
+    setlocale(LC_ALL, "Rus");
+    int N, v;
+    char C;
+    printf("Sever - N, Vostok - E, Ug - S, Zapad - W");
+    printf("\n Ishodnoe napravlenie robota - ");
+    scanf("%c", &C);
+    printf("Prodolzhit' dvizheniye - 0, Povorot nalevo - 1, Povorot napravo - -1");
+    printf("\n Tseloe chislo - ");
+    scanf("%i", &N);
+    if((C='N')&&(N=1)){
+    	v='W';
+	}
+	if((C=='N')&&(N==0)){
+    	v='N';
+	}
+	if((C=='N')&&(N==-1)){
+    	v='E';
+	}
+	if((C=='E')&&(N==1)){
+    	v='N';
+	}
+	if((C=='E')&&(N==0)){
+    	v='E';
+	}
+	if((C=='E')&&(N==-1)){
+    	v='S';
+	}
+	if((C=='S')&&(N==1)){
+    	v='E';
+	}
+	if((C=='S')&&(N==0)){
+    	v='S';
+	}
+	if((C=='S')&&(N==-1)){
+    	v='W';
+	}
+	if((C=='W')&&(N==1)){
+    	v='S';
+	}
+	if((C=='W')&&(N==0)){
+    	v='W';
+	}
+	if((C=='W')&&(N==-1)){
+    	v='N';
+	}
+	printf("Napravlenie robota = %c", v);
+	return 0;
+}
