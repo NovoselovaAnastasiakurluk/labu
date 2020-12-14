@@ -8,10 +8,11 @@ int main(){
 	cout<<"N= ";
 	cin>>N;
 	if(N<8){
-		cout<<"Nomer dnya nedeli= "<<((K+N)%7);
+		cout<<"Nomer dnya nedeli= "<<(((K+N-2)%7)+1);
 	}
 	else{
 		cout<<"Nepravilno vveden N";
 	}
 	return 0;
 }
+
