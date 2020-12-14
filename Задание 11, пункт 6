@@ -9,17 +9,23 @@ int main(){
 		if(n==0){
 		    cout<<"nulevoye chislo"<<endl;
 	    }
-	    if((n>0)&(n<100)&(n%2==0)){
+	    if((n>9)&(n<100)&(n%2==0)){
 	    	cout<<"chetnoye dvuznachnoye chislo"<<endl;
        	}
-    	if((n>0)&(n<100)&(n%2!=0)){
+    	if((n>9)&(n<100)&(n%2!=0)){
 	    	cout<<"ne chetnoye dvuznachnoye chislo"<<endl;
     	}
-       if((n>99)&(n<1000)&(n%2==0)){
+        if((n>99)&(n<1000)&(n%2==0)){
 	    	cout<<"chetnoye trekhznachnoye chislo"<<endl;
        	}
     	if((n>99)&(n<1000)&(n%2!=0)){
 	    	cout<<"ne chetnoye trekhznachnoye chislo"<<endl;
+	    }
+	    if((n>0)&(n<10)&(n%2==0)){
+	    	cout<<"chetnoye odnoznachnoye chislo"<<endl;
+       	}
+    	if((n>0)&(n<10)&(n%2!=0)){
+	    	cout<<"ne chetnoye odnoznachnoye chislo"<<endl;
     	}
 	}
 	return 0;
