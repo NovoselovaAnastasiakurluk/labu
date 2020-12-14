@@ -1,0 +1,137 @@
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+main()
+{
+	setlocale(LC_ALL, "Rus");
+	int N, S, D, E;
+	printf("chislo = ");
+	scanf("%i", &N);
+	S=N/100;
+	D=N%100;
+	E=N%10;
+	switch (S){
+        case(1):
+	        printf("Sto ");
+	        break;
+        case(2):
+		    printf("Dvesti ");
+		    break;
+	    case(3):
+	        printf("Trista ");
+		    break;
+	    case(4):
+            printf("Chetyresta ");
+            break;
+	    case(5):
+		    printf("Pyat'sot ");
+	        break;
+	    case(6):
+		    printf("Shest'sot ");
+		    break;
+	    case(7):
+		    printf("Sem'sot ");
+	        break;
+	    case(8):
+		    printf("Vosem'sot ");
+		    break;
+	    case(9):
+		    printf("Devyat'sot ");
+		    break;
+    }
+	if((D>9)&&(D<20)){
+		switch (D){
+			case(10):
+				printf("Desyat ");
+				break;
+	    	case(11):
+	    		printf("Odinnadtsat' ");
+	    		break;
+	    	case(12):
+	    		printf("Dvenadtsat' ");
+	    		break;
+	    	case(13):
+	    		printf("Trinadtsat ");
+	    		break;
+	    	case(14):
+	    		printf("Chetyrnadtsat' ");
+		    	break;
+	    	case(15):
+		    	printf("Pyatnadtsat' ");
+		    	break;
+	    	case(16):
+		    	printf("Shestnadtsat' ");
+		    	break;
+		    case(17):
+		    	printf("Semnadtsat' ");
+		    	break;
+	    	case(18):
+	    		printf("Vosemnadtsat' ");
+	    		break;
+		    case(19):
+		    	printf("Devyatnadtsat'");
+		    	break;
+		}	
+	}
+	else{
+		D=D/10;
+		switch (D){
+			case(2):
+				printf("Dvadtsat' ");
+				break;
+	    	case(3):
+	    		printf("Tridtsat' ");
+	    		break;
+	    	case(4):
+	    		printf("Sorok ");
+	    		break;
+	    	case(5):
+	    		printf("Pyat'desyat ");
+	    		break;
+	    	case(6):
+	    		printf("Shest'desyat ");
+		    	break;
+	    	case(7):
+		    	printf("Sem'desyat ");
+		    	break;
+	    	case(8):
+		    	printf("Vosem'desyat ");
+		    	break;
+		    case(9):
+		    	printf("Devyanosto ");
+		    	break;
+		    }
+	}
+	switch (E){
+		case(0):
+	        printf(" ");
+	        break;
+        case(1):
+	        printf("Odin ");
+	        break;
+        case(2):
+		    printf("Dva ");
+		    break;
+	    case(3):
+	        printf("Tri ");
+		    break;
+	    case(4):
+            printf("Chetyre ");
+            break;
+	    case(5):
+		    printf("Pyat' ");
+	        break;
+	    case(6):
+		    printf("Shest' ");
+		    break;
+	    case(7):
+		    printf("Sem' ");
+	        break;
+	    case(8):
+		    printf("Vosem' ");
+		    break;
+	    case(9):
+		    printf("Devyat' ");
+		    break;
+    }
+}
