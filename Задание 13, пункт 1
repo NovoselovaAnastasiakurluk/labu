@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int N;
+	float i, x;
+	cout<<"Tsena= ";
+	cin>>N;
+	for(i=0; i<=1; i=i+0.2){
+		x=N*i;
+		cout<<"Tsena "<<x<<" dlya "<<i<<" Kg konfet"<<endl;
+	}
+	return 0;
+}
