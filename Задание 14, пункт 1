@@ -1,0 +1,19 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int B, A, i, k;
+	cout<<"A = ";
+	cin>>A;
+	cout<<"B= ";
+	cin>>B;
+	if((A>0)&&(B>0)&&(B>A)){
+		for(i=A; i<=B; ++i){
+			for(k=1; k<=i; k++){
+				cout<<i;
+			}
+			printf("\n");
+		}
+	}
+	return 0;
+}
