@@ -1,0 +1,20 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int N, A;
+	float i, z, x, y, v;
+	cout<<"Kol-vo = ";
+	cin>>N;
+	cout<<"A= ";
+	cin>>A;
+	v=1+A;
+	z=A;
+	for(i=1; i<=N; i++){
+		x=z*A;
+		v=v+x;
+		z=x;
+		cout<<"v= "<<v<<endl;
+	}
+	return 0;
+}
