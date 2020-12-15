@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int B, A, i, k;
+	cout<<"A = ";
+	cin>>A;
+	cout<<"B= ";
+	cin>>B;
+	if((A>0)&&(B>0)&&(B<A)){
+		while(A>B){
+			A=A-B;
+		}
+	}
+	cout<<A;
+	return 0;
+}
