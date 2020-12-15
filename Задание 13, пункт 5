@@ -1,0 +1,21 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int N, A;
+	float i, P, S, Z, v;
+	cout<<"Kol-vo = ";
+	cin>>N;
+	cout<<"A= ";
+	cin>>A;
+	P=1;
+	S=1;
+	Z=-1;
+	for(i=1; i<=N; i++){
+		P=P*A;
+		P=Z*P;
+		S=S+P;
+		cout<<"S= "<<S<<endl;
+	}
+	return 0;
+}
