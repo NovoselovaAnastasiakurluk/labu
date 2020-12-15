@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	int p, s, k;
+	cout<<"p = ";
+	cin>>p;
+	s=1000;
+	k=0;
+	while(s<=1100){
+		s=s+s*p/100;
+		k++;
+	}
+	cout<<"Kol-vo mesyatsev "<<k<<endl;
+	cout<<"Itogoviu razmer vklada "<<s<<endl;
+	return 0;
+}
