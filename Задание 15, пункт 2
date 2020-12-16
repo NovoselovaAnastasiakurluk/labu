@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int Sign(double x)
+{	
+	if(x<0){
+		return -1;
+	}
+	if(x==0){
+		return 0;
+	}
+	if(x>0){
+		return 1;
+	}
+}
+int main()
+{
+	double A, B;
+	cout<<"A = ";
+    cin>>A;
+    cout<<"B = ";
+    cin>>B;
+    cout<<"Sign(A)+Sign(B) = "<<Sign(A)+Sign(B)<<endl;
+	return 0;
+}
