@@ -1,0 +1,21 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+void powerA3(float A, float *B)
+{
+	*B = A * A * A;
+}
+int main(void)
+{
+	int i;
+	float A;
+	for (i=1; i<=5; i++)
+	{   
+		cout<<"A = ";
+    	cin>>A;
+		float B;
+		powerA3(A, &B);
+		cout<<"B = "<<B<<endl;
+	}
+	return 0;
+}
