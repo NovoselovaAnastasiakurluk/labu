@@ -1,0 +1,30 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int Quarter(float X, float Y)
+{
+	if((X>0)&&(Y>0)){
+		return 1;
+	}
+	if((X<0)&&(Y>0)){
+		return 2;
+	}
+	if((X<0)&&(Y<0)){
+		return 3;
+	}
+	if((X>0)&&(Y<0)){
+		return 4;
+	}
+}
+main(void)
+{
+	float X, Y;
+	int i;
+	for(i=0; i<3; i++){
+		cout<<"X = ";
+        cin>>X;
+        cout<<"Y = ";
+        cin>>Y;
+        cout<<"Chetvert "<<Quarter(X,Y)<<endl;
+	}
+}
