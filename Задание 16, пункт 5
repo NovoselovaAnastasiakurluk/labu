@@ -1,0 +1,38 @@
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+	int mass[10], x, N, i, j;
+	cout<<"N = ";
+	cin>>N;
+	for(i=0; i<N; i++){
+		cout<<"mass["<<i+1<<"]=";
+		cin>>mass[i];
+	}
+	for(i=0; i<N; i++){
+		for(j=i, x=mass[i]; (j>0)&&(mass[j-1]>x); j--){
+			mass[j]=mass[j-1];
+		}
+		mass[j]=x;
+	}
+	for(i=0; i<N; i++){
+		if(mass[i]%2!=0){
+			printf("%d", mass[i]);
+		}
+	}
+	for(i=0; i<N; i++){
+		for(j=i, x=mass[i]; (j>0)&&(mass[j-1]<x); j--){
+			mass[j]=mass[j-1];
+		}
+		mass[j]=x;
+	}
+	for(i=0; i<N; i++){
+		if(mass[i]%2==0){
+			printf("%d", mass[i]);
+		}
+	}
+	return 0;
+}
