@@ -1,0 +1,24 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	int n, i, j, x, k, mass[10];
+	cout<<"n = ";
+	cin>>n;
+	for (i=0; i<n; i++)
+	{
+		printf("mass[%d] - ", i);
+		scanf("%d", &mass[i]);
+	}
+	for(i=1; i<n; i++){
+		for(j=i, x=mass[i]; (j>1) && (mass[j-1]>x); j--){
+			mass[j]=mass[j-1];
+		}
+		mass[j]=x;
+	}
+	cout<<" "<<endl;
+	cout<<"Noviu massiv"<<endl;
+	for (i = 0; i < n; i++)
+		printf("\n mass[%d] - %d", i, mass[i]);
+}
