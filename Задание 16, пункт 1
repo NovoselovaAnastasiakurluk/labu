@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	int i=1, j=1, N, mass[15];
+	cout<<"N = ";
+    cin>>N;
+    for(i=0; i<N; i++){
+    	mass[i]=(i*2)+1;
+		cout<<"mass["<<i<<"] = "<<mass[i]<<endl;
+	}
+	return 0;
+}
