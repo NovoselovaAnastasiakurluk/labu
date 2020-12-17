@@ -1,0 +1,22 @@
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+	int mass[10], x=100, y, N, i;
+	cout<<"N = ";
+	cin>>N;
+	for(i=1; i<=N; i++){
+		cout<<"mass["<<i<<"]=";
+		cin>>mass[i];
+	}
+	for(i=2; i<=N; i++){
+	    if((mass[i]>mass[i-1])&&(mass[i]>mass[i+1])){
+		    x=mass[i];
+        }
+	}
+	cout<<"Nomer lokalnogo maximuma = "<<x<<endl;
+	return 0;
+}
