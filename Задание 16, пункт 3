@@ -1,0 +1,27 @@
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int N, A, B, X, i=1;
+    int mass[10];
+    cout<<"N = ";
+    cin>>N;
+    cout<<"A = ";
+    cin>>A;
+    cout<<"B = ";
+    cin>>B;
+    mass[1] = A;
+    mass[2]=B;
+    X=mass[1];
+    cout<<"mass[1] = "<<mass[1]<<endl;
+    cout<<"mass[2] = "<<mass[2]<<endl;
+    for (i = 3; i <= N; i++)
+    {
+        mass[i] = mass[i-1]+X;
+        X=mass[i];
+        cout<<"mass["<<i<<"] = "<<mass[i]<<endl;
+    }
+}
