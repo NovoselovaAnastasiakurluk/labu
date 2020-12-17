@@ -1,0 +1,31 @@
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+	int mass[10], K, L, N, i;
+	float x;
+	cout<<"N = ";
+	cin>>N;
+	for(i=0; i<N; i++){
+		cout<<"mass["<<i+1<<"]=";
+		cin>>mass[i];
+	}
+	cout<<"L = ";
+	cin>>L;
+	cout<<"K = ";
+	cin>>K;
+	if((1<=K)&&(K<=L)&&(L<=N)){
+		for(i=K; i<=L; i++){
+	    	x=x+mass[i];
+	    }
+    	x=x/(L-K+1);
+    	cout<<"Srednee znachenie = "<<x<<endl;
+	}
+	else{
+		cout<<"Ne pravilno vvedenu K i L"<<endl;
+	}
+	return 0;
+}
