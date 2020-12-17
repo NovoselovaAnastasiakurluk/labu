@@ -1,0 +1,31 @@
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+	int mass[10], x, y, N, i;
+	cout<<"N = ";
+	cin>>N;
+	for(i=0; i<N; i++){
+		cout<<"mass["<<i+1<<"]=";
+		cin>>mass[i];
+	}
+	for(i=0; i<N-1; i++){
+		mass[i]=mass[i+1]/mass[i];
+	}
+	i=0;
+	x=mass[i];
+	while((x==mass[i+1])&&(i<y-1)){
+		i++;
+	}
+	x=mass[i];
+	if((i=y-1)&&(x==mass[i-1])){
+		cout<<"Raznost progressii "<<mass[i]<<endl;
+	}
+	else{
+		cout<<"Ne yavlyaetsa progressieu"<<endl;
+	}
+	return 0;
+}
