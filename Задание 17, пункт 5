@@ -1,0 +1,32 @@
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+	int mass[10], x, y, N, i, j;
+	cout<<"N = ";
+	cin>>N;
+	for(i=1; i<=N; i++){
+		cout<<"mass["<<i<<"]=";
+		cin>>mass[i];
+	}
+	for(i=1; i<=N-1; i++){
+	    for(j=i+1; j<=N; j++){
+		    if(mass[i]==mass[j]){
+		    	x=i;
+		    	y=j;
+			}
+        }
+	}
+	if(x>y){
+		cout<<"1 nomber massiva = "<<y<<endl;
+		cout<<"2 nomber massiva = "<<x<<endl;
+	}
+	if(x<y){
+		cout<<"1 nomber massiva = "<<x<<endl;
+		cout<<"2 nomber massiva = "<<y<<endl;
+	}
+	return 0;
+}
