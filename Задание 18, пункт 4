@@ -1,0 +1,32 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int N, i, MIN=1, MAX=1, mass[10];
+    float x;
+    cout<<"N = ";
+    cin>>N;
+    for (i=1; i<=N; i++){
+        printf("mass[%d] = ", i);
+        scanf("%d", &mass[i]);
+    }
+    cout<<" "<<endl;
+    for(i=1; i<=N; i++){
+        if (mass[i]<mass[MIN]){
+		    MIN = i;
+		}
+    }
+    for(i=1; i<=N; i++){
+        if (mass[i]>mass[MAX]){
+            MAX = i;
+        }
+    }
+    for(i=MIN+1; i<MAX; i++){
+        mass[i] = 0;
+    }
+    for(i=1; i<=N; i++){
+        cout<<"mass["<<i<<"]"<<mass[i]<<endl;
+    }
+    return 0;
+}
