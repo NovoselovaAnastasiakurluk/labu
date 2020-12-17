@@ -1,0 +1,25 @@
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+	int mass[10], x=100, y, N, i;
+	cout<<"N = ";
+	cin>>N;
+	for(i=1; i<=N; i++){
+		cout<<"mass["<<i<<"]=";
+		cin>>mass[i];
+	}
+	i=2;
+	x=mass[2];
+	while(i<=N){
+	    if(mass[i]<x){
+		    x=mass[i];
+        }
+        i=i+2;
+	}
+	cout<<"Minimalnyu element = "<<x<<endl;
+	return 0;
+}
