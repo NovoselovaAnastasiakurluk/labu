@@ -1,0 +1,23 @@
+#include <locale.h>
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int N, A, D, x=1, i=1;
+    int mass[10];
+    cout<<"N = ";
+    cin>>N;
+    cout<<"A = ";
+    cin>>A;
+    cout<<"D = ";
+    cin>>D;
+    mass[1] = A;
+    for (i = 2; i <= N; i++)
+    {
+        mass[i] = A * pow(D, x);
+        x=x+1;
+        cout<<"mass["<<i<<"] = "<<mass[i]<<endl;
+    }
+}
