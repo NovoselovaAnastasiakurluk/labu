@@ -1,0 +1,42 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	int n, i, x, N;
+	int a[10], b[10];
+	cout<<"Max chislo razryadov N = ";
+	cin>>N;
+	cout<<" "<<endl;
+	cout<<"Dlya massiva a"<<endl;
+	for(i=1; i<=N; i++){
+		printf("a[%d]= ", i);
+		scanf("%d", &a[i]);
+	}
+	cout<<" "<<endl;
+	cout<<"Dlya massiva b"<<endl;
+	for(i=1; i<=N; i++){
+		printf("b[%d]= ", i);
+		scanf("%d", &b[i]);
+	}
+	for (i = 1; i <= N; i++)
+	{
+		x = a[i];
+		a[i] = b[i];
+		b[i] = x;
+	}
+	cout<<" "<<endl;
+	cout<<"New massivi"<<endl;
+	cout<<" "<<endl;
+	cout<<"Massiv a"<<endl;
+	for (i = 1; i <= N; i++)
+	{
+		cout<<"a["<<i<<"] = "<<a[i]<<endl;
+	}
+	cout<<" "<<endl;
+	cout<<"Massiv b"<<endl;
+	for (i = 1; i <= N; i++)
+	{
+		cout<<"b["<<i<<"] = "<<b[i]<<endl;
+	}
+}
